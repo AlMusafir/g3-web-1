@@ -10,6 +10,19 @@
 
 
 
+/* shared styles  */
+
+.btn-primary{
+    border-radius: 9px;
+    font-size: 16px;
+    color: #FFF;
+    background: #FF900E ;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+
+
 
 /* header styles */
 
@@ -59,14 +72,82 @@ nav li a{
 
 /* banner styles  */
 
+/* Responsive styles with media query */
+
+
+/* for mobile devices  */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* For tablet or medium devices  */
+
+@media screen and (min-width:576px) and(max-width:960px) {
+
+ header{
+    padding: 50px;
+ }
+
+ nav{
+    flex-direction: column;
+ }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .banner-content{
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
+.banner-container img{
+    margin-top: 35px;
+    width: 100%;
+}
+
 .banner-title{
     font-size: 64px;
+}
+
+.banner-info{
+    color: #727272;
 }
 
 
@@ -76,6 +157,80 @@ nav li a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main styles  */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+/* team container styles */
+
+.team-container{
+    display: flex;
+    align-items: center;
+}
+
+.team-title{
+    font-size: 3rem;
+}
+
+.team-title .quick{
+    color:  #727272;
+}
+
+.team-title .our{
+    color:#131313;
+}
+
+.team-title .feature{
+    color: #FF900E;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.8rem;
+}
+
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 
 
 
