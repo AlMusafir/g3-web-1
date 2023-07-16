@@ -65,72 +65,6 @@ nav li a{
 
 
 
-
-
-
-
-
-/* banner styles  */
-
-/* Responsive styles with media query */
-
-
-/* for mobile devices  */
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-
-
-
-
-/* For tablet or medium devices  */
-
-@media screen and (min-width:576px) and(max-width:960px) {
-
- header{
-    padding: 50px;
- }
-
- nav{
-    flex-direction: column;
- }
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -160,45 +94,19 @@ nav li a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* team container styles */
 
 
 /* Main styles  */
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 
 
 
-/* team container styles */
 
 .team-container{
     display: flex;
@@ -224,7 +132,7 @@ main{
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:1.8rem;
+    gap:1.5rem;
 }
 
 .team-content{
@@ -250,3 +158,80 @@ main{
 
 
 
+
+/* Responsive styles with media query */
+
+
+/* for mobile devices  */
+/* @media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .team-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:576px) and(max-width:960px) {
+
+ header{
+    padding: 50px;
+ }
+
+ nav, .team-container{
+    flex-direction: column;
+ }
+
+
+
+}
+ */
+
+
+
+
+
+ @media only screen and (max-width: 480px) {
+    .team-title {
+      font-size: 2rem;
+    }
+  
+    .team-content {
+      padding: 0 20px;
+    }
+  
+    .team-img-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  /* Responsive styles for medium-sized devices */
+  @media only screen and (max-width: 768px) {
+    
+    nav{
+        flex-direction: column;
+    }
+
+    .team-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .team-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .team-content {
+      padding: 0 40px;
+    }
+  }
